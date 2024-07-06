@@ -93,15 +93,15 @@ footer {
     width: 100%;
 }
 
-/* Hamburger Menu Styles */
+
 .hamburger {
-    display: none; /* Ensures it's not displayed by default */
+    display: none; 
     cursor: pointer;
     font-size: 30px;
     position: absolute;
     right: 20px;
     top: 20px;
-    z-index: 1001; /* Ensures it is above other content */
+    z-index: 1001; 
 }
 .nav-menu-li {
     display: none;
