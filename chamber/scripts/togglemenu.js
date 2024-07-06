@@ -11,6 +11,10 @@ function toggleMenu() {
     }
 }
 
+document.querySelector('.mode').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
 
 window.addEventListener('resize', function() {
     var w = window.innerWidth;
@@ -25,10 +29,10 @@ window.addEventListener('resize', function() {
         hamburger.innerHTML = "☰";
     }
 });
-console.log("about to addd listener")
+
 document.addEventListener("DOMContentLoaded", function() {
     let lazyImages = document.querySelectorAll(".lazy");
-    console.log("Laziness length"+ lazyImages.length) 
+
     if ("IntersectionObserver" in window) {
         let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
@@ -44,22 +48,23 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyImages.forEach(function(lazyImage) {
             lazyImageObserver.observe(lazyImage);
         });
-    }});
-    function displayBanner() {
-        const today = new Date().getDay();
-        const banner = document.getElementById('meet-greet-banner');
-    
-        if (today === 1 || today === 2 || today === 3) {
-            banner.style.display = 'block';
-        }
     }
-    
-    function closeBanner() {
-        document.getElementById('meet-greet-banner').style.display = 'none';
+});
+
+function displayBanner() {
+    const today = new Date().getDay();
+    const banner = document.getElementById('meet-greet-banner');
+
+    if (today === 1 || today === 2 || today === 3) {
+        banner.style.display = 'block';
     }
-    
-    document.addEventListener('DOMContentLoaded', () => {
-        getWeather();
-        displayBanner();
-    });
-    
+}
+
+function closeBanner() {
+    document.getElementById('meet-greet-banner').style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    getWeather();
+    displayBanner();
+});
