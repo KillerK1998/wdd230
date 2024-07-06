@@ -1,15 +1,23 @@
+
 function setCopyrightYear() {
-    const year = new Date().getFullYear(); // Get the current year
-    document.querySelector('.copyright').textContent = `© ${year} Saint George Chamber`; 
-}
-function setLastModifiedDate() {
-    const lastModified = document.lastModified; 
-    const modifiedParagraph = document.querySelector('.lastmodified'); 
-    if (modifiedParagraph) {
-        modifiedParagraph.textContent = `Last Updated: ${lastModified}`; 
+    const year = new Date().getFullYear(); 
+    const copyright = document.querySelector('.copyright');
+    if (copyright) {
+        copyright.textContent = `© ${year} Saint George Chamber`;
     }
 }
-window.onload = function() {
+
+
+function setLastModifiedDate() {
+    const lastModified = document.lastModified;
+    const modifiedParagraph = document.querySelector('.lastmodified');
+    if (modifiedParagraph) {
+        modifiedParagraph.textContent = `Last Updated: ${lastModified}`;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    
     setCopyrightYear();
     setLastModifiedDate();
-};
+});
