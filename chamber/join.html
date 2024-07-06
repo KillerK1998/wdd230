@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <meta name="description" content="This is the Join page to become a member of the Saint George Chamber of Commerce">
+    <meta name="author" content="Kaler Sappington">
+
+    <meta property="og:title" content="Chamber Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://imgs.search.brave.com/oF3d7jg7PaVGcgh8sHLn-qoRQ-AHVI0V2PO_s9tY4Bo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDMxOTQ3L3Bob3Rv/L3BvcnRmb2xpby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/OXBiMEFxY1dxaktJ/MmJKSl9wUmlkWnli/NWNLeHBkU1ZCNmRn/WU9wREx3ST0">
+    <meta property="og:url" content="https://killerk1998.github.io/wdd230/">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="join-page">
+    <header>
+        <div class="profile-container"></div>
+            <div class="container">
+                <h1>Join the Chamber of Commerce</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <div class="join-form-container">
+            <div class="form-section">
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="title">Title/Position:</label>
+                    <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}">
+
+                    <label for="email">Contact Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+                    <label for="phone">Mobile Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="organization-name">Organization Name:</label>
+                    <input type="text" id="organization-name" name="organization-name" required>
+
+                    <label for="membership-level">Membership Level:</label>
+                    <select id="membership-level" name="membership-level">
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Organization Description:</label>
+                    <textarea id="description" name="description"></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="membership-benefits">
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li><strong>NP Membership:</strong> No fee, special events, basic training, event discounts.</li>
+                    <li><strong>Bronze Membership:</strong> Access to training, spotlight on the home page, event discounts.</li>
+                    <li><strong>Silver Membership:</strong> Bronze benefits plus advertising on our website, priority event registration.</li>
+                    <li><strong>Gold Membership:</strong> Silver benefits plus exclusive events, premium advertising spots, highest priority registration.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; Kaler Sappington, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/time.js"></script>
+</body>
+</html>

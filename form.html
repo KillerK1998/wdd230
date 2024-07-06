@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <meta name="author" content="Kaler Sappington">
+    <meta name="description" content="here is a form that you can fill out in order to get in contact with someone">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Form</h1>
+    </header>
+
+    <main>
+        <h2>Form Section</h2>
+        <form action="record.html" method="GET" onsubmit="return validatePassword()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$" title="Password must be at least 8 characters long and contain only alpha-numeric characters.">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address.">
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRangeValue(this.value)" onchange="updateRangeValue(this.value)">
+            <span id="rangeValue">5</span>
+
+            <button type="submit">Click to Submit Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Course. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

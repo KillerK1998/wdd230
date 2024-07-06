@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <meta property="og:title" content="Chamber Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mediaim.expedia.com/destination/9/9f051995e5cc39a9aba58755790da023.jpg">
+    <meta property="og:url" content="https://killerk1998.github.io/wdd230/chamber/index.html">
+    <meta property="og:description" content="Discover the Saint George Chamber of Commerce: your hub for local business connections, events, and community engagement. Join us today!">
+    <meta name="author" content="Kaler Sappington">
+    <meta name="description" content="Discover the Saint George Chamber of Commerce: your hub for local business connections, events, and community engagement. Join us today!">
+</head>
+<body>
+    <header>
+        <div class="mode">🕶️</div>
+        <h1>Chamber of Commerce</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="discover.html">Discover Saint George</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="directory.html">Directory</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main class="chamber">
+        <div id="meet-greet-banner" style="display: none;">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m. <button onclick="closeBanner()">❌</button></p>
+        </div>
+        <section id="hero">
+            <h2>Welcome to the Saint George Chamber of Commerce</h2>
+            <picture>
+                <source srcset="images/wdd230-org-large.webp" media="(min-width: 1200px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(min-width: 960px)">
+                <source srcset="images/wdd230-org-small.webp" media="(min-width: 400px)">
+                <img src="images/wdd230-org-small.webp" alt="hero">
+            </picture>
+            <p>Here you will find information in regards to activities, weather and companies in Saint George</p>
+        </section>
+        <section id="join">
+            <h2>Join the Chamber of Commerce</h2>
+            <p>Join the cause and sign up today! <a href="join.html" class="cta">Join Now</a></p>
+        </section>
+        <section id="events">
+            <h2>Current Events</h2>
+            <p>Information about current events here.</p>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <div class="weather-details">
+                <p>Temperature: <span id="current-temperature">Loading...</span> Degrees</p>
+                <p>Weather: <span id="weather-description">Loading...</span></p>
+                <img id="current-weather-icon" src="" alt="Current Weather Icon" />
+            </div>
+            <h3>3-Day Forecast:</h3>
+            <ul id="forecast">
+                <li>Day 1: <span class="day1-forecast">Loading...</span> Degrees <img class="day1-icon" src="" alt="Day 1 Weather Icon" /></li>
+                <li>Day 2: <span class="day2-forecast">Loading...</span> Degrees <img class="day2-icon" src="" alt="Day 2 Weather Icon" /></li>
+                <li>Day 3: <span class="day3-forecast">Loading...</span> Degrees <img class="day3-icon" src="" alt="Day 3 Weather Icon" /></li>
+            </ul>
+        </section>
+        
+        
+        <section id="spotlights">
+            <h2>Company Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo-color.webp" alt="Logo" class="logo-img">
+            <p class="copyright"></p>
+            <p class="author">Kaler Sappington</p>
+            <p class="contact">208-122-2222</p>
+            <p class="project">WDD230 project</p>
+            <p class="lastmodified"></p>
+        </div>
+    
+        <div class="footer-additional">
+            <p class="additional-info"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+</html>

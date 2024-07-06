@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+.form-container {
+    width: 50%;
+    margin: 2em auto;
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label, input, select, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+input, select, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+.membership-benefits {
+    margin-top: 2em;
+}
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+.membership-benefits li {
+    background: #f9f9f9;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-left: 5px solid #333;
+}
+@media (min-width: 768px) {
+    .join-form-container {
+    width: 50%;
+    margin: 2em auto;
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+@media (max-width: 1200px) {
+    .grid-view .member {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+}
+@media (max-width: 768px) {
+    .grid-view .member {
+        flex: 1 1 100%;
+    }
+}
+#directory{
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}

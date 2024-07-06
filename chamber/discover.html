@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce and Discover</title>
+    <meta name="description" content="Join the Chamber of Commerce">
+    <meta name="author" content="Kaler Sappington">
+
+    <meta property="og:title" content="Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://imgs.search.brave.com/oF3d7jg7PaVGcgh8sHLn-qoRQ-AHVI0V2PO_s9tY4Bo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDMxOTQ3L3Bob3Rv/L3BvcnRmb2xpby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/OXBiMEFxY1dxaktJ/MmJKSl9wUmlkWnli/NWNLeHBkU1ZCNmRn/WU9wREx3ST0">
+    <meta property="og:url" content="https://killerk1998.github.io/wdd230/">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="images/logo-color.webp" alt="Chamber of Commerce">
+            <div class="container">
+                <h1>Welcome to the Saint George Chamber of Commerce</h1>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#events">Current Events</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <h2>Demographics</h2>
+            <p>Population: 125,000</p>
+            <p>Median Age: 35 years</p>
+            <h2>Events</h2>
+            <ul>
+                <li>Annual Fair - June 15</li>
+                <li>Music Festival - July 20</li>
+            </ul>
+            <h2>Attractions</h2>
+            <ul>
+                <li>Central Park</li>
+                <li>Historic Museum</li>
+            </ul>
+            <section id="visit-counter">
+                <h2>Visitor Count</h2>
+                <p>This page has been visited <span id="visitCount">0</span> times.</p>
+            </section>
+            <section id="visit-message">
+                <h2>Last Visit</h2>
+                <p id="sidebar-content"></p>
+            </section>
+        </div>
+        <div class="main-content">
+            <h2>Local Places of Interest</h2>
+            <figure class="photo">
+                <picture>
+                    <source srcset="images/temple-large.webp" media="(min-width: 1200px)">
+                    <source srcset="images/temple-medium.webp" media="(min-width: 960px)">
+                    <source srcset="images/temple-small.webp" media="(min-width: 400px)">
+                    <img class="lazy" data-src="images/temple-small.webp" src="images/hero-image.png" alt="Site 1" loading="lazy">
+                </picture>
+                <figcaption>The Saint George Temple and Visitors center is an amazing place to visit, learn about the marvelous history of this temple and more at the Visitors center!!!</figcaption>
+            </figure>
+            
+            <figure class="photo">
+                <picture>
+                    <source srcset="images/saint-george-tabernacle-large.webp" media="(min-width: 1200px)">
+                    <source srcset="images/saint-george-tabernacle-medium.webp" media="(min-width: 960px)">
+                    <source srcset="images/saint-george-tabernacle-small.webp" media="(min-width: 400px)">
+                    <img class="lazy" data-src="images/saint-george-tabernacle-small.webp" src="images/hero-image.png" alt="Site 2" loading="lazy">
+                </picture>
+                <figcaption>The Saint George Tabernacle is one of the oldest buildings in Saint George, it was a gathering place for members of the Church of Jesus Christ of Latter-day Saints. If you want to learn more about the history of the church or the history of this building, it is an amazing place to visit.</figcaption>
+            </figure>
+            
+            <figure class="photo">
+                <picture>
+                    <source srcset="images/judds-large.webp" media="(min-width: 1200px)">
+                    <source srcset="images/judds-medium.webp" media="(min-width: 960px)">
+                    <source srcset="images/judds-small.webp" media="(min-width: 400px)">
+                    <img class="lazy" data-src="images/judds-small.webp" src="images/hero-image.png" alt="Site 3" loading="lazy">
+                </picture>
+                <figcaption>Opened in 1911, Judds has served the people of Saint George for over 100 years, selling many old retro drinks, ice cream, candies and more. If you happen to be in Downtown Saint George, Judd's is a place that should not be missed.</figcaption>
+            </figure>
+            
+            <figure class="photo">
+                <picture>
+                    <source srcset="images/brigham-young-home-large.webp" media="(min-width: 1200px)">
+                    <source srcset="images/brigham-young-home-medium.webp" media="(min-width: 960px)">
+                    <source srcset="images/brigham-young-home-small.webp" media="(min-width: 400px)">
+                    <img class="lazy" data-src="images/brigham-young-home-small.webp" src="images/hero-image.png" alt="Site 4" loading="lazy">
+                </picture>
+                <figcaption>This home belonged to a man named Brigham Young. Brigham Young was the second president of the LDS church.</figcaption>
+            </figure>
+            
+            <figure class="photo">
+                <picture>
+                    <source srcset="images/jacob-hamblin-home-large.webp" media="(min-width: 1200px)">
+                    <source srcset="images/jacob-hamblin-home-medium.webp" media="(min-width: 960px)">
+                    <source srcset="images/jacob-hamblin-home-small.webp" media="(min-width: 400px)">
+                    <img class="lazy" data-src="images/jacob-hamblin-home-small.webp" src="images/hero-image.png" alt="Site 5" loading="lazy">
+                </picture>
+                <figcaption>Want to learn more about church history? Check out the Jacob Hamblin Home and learn about the amazing works of Jacob Hamblin.</figcaption>
+            </figure>
+            
+            <figure class="photo">
+                <picture>
+                    <source srcset="images/snowcanyon-large.webp" media="(min-width: 1200px)">
+                    <source srcset="images/snowcanyon-medium.webp" media="(min-width: 960px)">
+                    <source srcset="images/snowcanyon-small.webp" media="(min-width: 400px)">
+                    <img class="lazy" data-src="images/snowcanyon-small.webp" src="images/hero-image.png" alt="Site 6" loading="lazy">
+                </picture>
+                <figcaption>Snow Canyon is one of the best places to go. If you like hiking, this is definitely the place to be.</figcaption>
+            </figure>            
+        </div>
+    </main>
+    <div class="map-container">
+        <iframe class="map-iframe" src="https://maps.google.com/maps?hl=en&q=2947%20Jacob%20Hamblin%20Dr.+(Kaler's%20house)&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe>
+    </div>
+    <footer>
+        <p>&copy; Kaler Sappington, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/visitcounter.js"></script>
+</body>
+</html>

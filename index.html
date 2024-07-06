@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaler Sappington - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Kaler Sappington. This website serves as a hub for all course-related activities and resources.">
+    <meta name="author" content="Kaler Sappington">
+
+    <meta property="og:title" content="Kaler Sappington - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://imgs.search.brave.com/oF3d7jg7PaVGcgh8sHLn-qoRQ-AHVI0V2PO_s9tY4Bo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDMxOTQ3L3Bob3Rv/L3BvcnRmb2xpby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/OXBiMEFxY1dxaktJ/MmJKSl9wUmlkWnli/NWNLeHBkU1ZCNmRn/WU9wREx3ST0">
+    <meta property="og:url" content="https://killerk1998.github.io/wdd230/">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="images/kaler.webp" alt="Your Name">
+            <div class="container">
+                <h1>Kaler Sappington</h1>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <img src="images/temple-large.webp" alt="Favorite Temple" class="responsive-img">
+            <div class="herolabel" style="position: absolute;">
+                <p>Saint George Utah Temple</p>
+            </div>
+        </div>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="card-container">
+            <section class="card">
+                <h3>Information</h3>
+                <p id="weather">Loading weather...</p>
+            </section>
+            <section class="card">
+                <h3>Visitor Count</h3>
+                <section id="visit-counter">
+                    <p>This page has been visited <span id="visitCount">0</span> times.</p>
+                </section>
+            </section>
+        </div>
+        <section id="links-container"></section> <!-- This section will be populated with links -->
+    </main>
+    <div class="map-container">
+        <iframe class="map-iframe" src="https://maps.google.com/maps?hl=en&q=2947%20Jacob%20Hamblin%20Dr.+(Kaler's%20house)&t=&z=12&ie=UTF8&iwloc=B&output=embed"></iframe>
+    </div>
+    
+    <footer>
+        <p>&copy; Kaler Sappington, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/visitcounter.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script> <!-- Include the weather script -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sunshine Bakery",
+        "address": "123 Main St, Saint George, UT",
+        "phone": "435-555-1234",
+        "website": "http://www.sunshinebakery.com",
+        "image": "sunshine-bakery.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "A cozy bakery offering a variety of fresh pastries and breads."
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "456 Elm St, Saint George, UT",
+        "phone": "435-555-5678",
+        "website": "http://www.techsolutions.com",
+        "image": "tech-solutions.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Providing innovative tech solutions for businesses."
+    },
+    {
+        "name": "Fitness Plus",
+        "address": "789 Oak St, Saint George, UT",
+        "phone": "435-555-9012",
+        "website": "http://www.fitnessplus.com",
+        "image": "fitness-plus.png",
+        "membershipLevel": "Platinum",
+        "otherInfo": "A modern gym with state-of-the-art equipment and personal trainers."
+    },
+    {
+        "name": "Green Thumb Nursery",
+        "address": "101 Pine St, Saint George, UT",
+        "phone": "435-555-3456",
+        "website": "http://www.greenthumbnursery.com",
+        "image": "green-thumb-nursery.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Your go-to place for all your gardening needs."
+    },
+    {
+        "name": "Elegant Events",
+        "address": "202 Maple St, Saint George, UT",
+        "phone": "435-555-7890",
+        "website": "http://www.elegantevents.com",
+        "image": "elegant-events.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Professional event planning services for all occasions."
+    },
+    {
+        "name": "Healthy Eats",
+        "address": "303 Birch St, Saint George, UT",
+        "phone": "435-555-2345",
+        "website": "http://www.healthyeats.com",
+        "image": "healthy-eats.png",
+        "membershipLevel": "Platinum",
+        "otherInfo": "Offering nutritious and delicious meals for a healthy lifestyle."
+    },
+    {
+        "name": "Adventure Outdoors",
+        "address": "404 Cedar St, Saint George, UT",
+        "phone": "435-555-6789",
+        "website": "http://www.adventureoutdoors.com",
+        "image": "adventure-outdoors.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Your local expert in outdoor adventures and gear."
+    }
+]
