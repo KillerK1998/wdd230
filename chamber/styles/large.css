@@ -4,9 +4,9 @@ body {
     margin: 0;
     padding: 0;
 }
-header, footer {
+header {
     background-color: #333;
-    color: white;
+    color:white;
     text-align: center;
     padding: 1em 0;
 }
@@ -88,4 +88,11 @@ button:hover {
     margin: 10px;
     padding: 10px; 
     border: 1px solid #ccc; 
+}
+
+footer {
+    background-color: #333;
+    color:red;
+    text-align: center;
+    padding: 1em 0;
 }

@@ -43,7 +43,7 @@ header h1 {
 }
 nav ul {
     list-style-type: none;
-    background-color: #065A60;
+    background-color: black;
     padding: 0;
 }
 
@@ -227,12 +227,16 @@ iframe {
 body.dark-mode {
     background-color: #333;
     color: #fff;
+    
 }
 
 body.dark-mode header,
 body.dark-mode nav,
 body.dark-mode footer {
     background-color: #444;
+}
+body.dark-mode p{
+    color: black;
 }
 
 body.dark-mode a {
@@ -242,5 +246,7 @@ body.dark-mode a {
 body.dark-mode .hamburger {
     color: #fff;
 }
-
-
+.mode {
+    top: 40px;
+    left:0px;
+}
