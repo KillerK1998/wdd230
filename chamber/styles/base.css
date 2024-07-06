@@ -293,7 +293,9 @@ iframe{
     width: 1rem;
 }
 
-
+.list-view img{
+    display: none;
+}
 
 #members {
     display: flex;
@@ -313,8 +315,8 @@ iframe{
 #members .member img {
     max-width: 100%;
     height: auto;
-    display: block;
     margin-bottom: 1rem;
+    border-radius: 10px; 
 }
 
 #members .member:hover {
@@ -339,18 +341,10 @@ iframe{
 }
 
 .list-view .member img {
-    max-width: 100px;
-    margin-right: 1rem;
+    display:none;
 }
 
 
 
 
 
-#members .member img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-    border-radius: 10px; 
-}

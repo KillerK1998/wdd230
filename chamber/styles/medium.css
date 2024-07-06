@@ -191,8 +191,9 @@ iframe {
     margin: 10px 0;
 }
 
-.main-content {
-    padding: 20px;
+.main-content img:hover {
+    transform: scale(1.05);
+    border: 5px solid teal;
 }
 
 .photo {

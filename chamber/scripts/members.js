@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetch("data/members.json")
         .then(response => response.json())
-        .then(data => displayMembers(data));
+        .then(data => {
+            console.log(data); // Log data to ensure it is being loaded correctly
+            displayMembers(data);
+        });
 
     toggleViewButton.addEventListener("click", () => {
         membersContainer.classList.toggle("list-view");
@@ -22,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">${member.website}</a>
-                <p>Membership Level: ${member.membershipLevel}</p>
+                <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
                 <p>${member.otherInfo}</p>
             `;
             membersContainer.appendChild(memberDiv);
