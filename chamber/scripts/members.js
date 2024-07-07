@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("data/members.json")
         .then(response => response.json())
         .then(data => {
-            console.log(data); // Log data to ensure it is being loaded correctly
+            console.log(data); 
             displayMembers(data);
         });
 
