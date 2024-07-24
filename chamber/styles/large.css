@@ -96,3 +96,6 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+#hero picture{
+    width: 100%;
+}

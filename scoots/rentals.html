@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scoots - Rentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Scoots Logo" class="logo-img">
+        <h1>Scoots - Rentals</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://facebook.com" target="_blank">Social Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="rental-options">
+            <h2>Available Rentals</h2>
+            <div id="rentals-container"></div>
+            <table id="rentals-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Max Persons</th>
+                        <th>Reservation Half Day</th>
+                        <th>Reservation Full Day</th>
+                        <th>Walk-In Half Day</th>
+                        <th>Walk-In Full Day</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.webp" alt="Scoots Logo" class="logo-img">
+            <p>Kaler Sappington</p>
+        </div>
+        <div class="footer-additional">
+            <p>Contact us at: <a href="mailto:info@scoots.com">info@scoots.com</a></p>
+        </div>
+    </footer>
+    <script src="scripts/rentals.js"></script>
+</body>
+</html>

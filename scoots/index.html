@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scoots - Motor Scooter Rentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta property="og:title" content="Scoots - Motor Scooter Rentals">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://imgs.search.brave.com/glFunNMUDrx4hzG_uTLcBncIf16wp5Psk1b6w0ceolQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb3p1/bWVsLW1leGljby1j/b2FzdGxpbmUtMTcz/MTY0MS5qcGc">
+    <meta property="og:url" content="https://example.com/scoots">
+    <meta property="og:description" content="Rent motor scooters, jeeps, and ATVs in Cozumel. Explore the island with Scoots!">
+    <meta name="author" content="Kaler Sappington">
+    <meta name="description" content="Scoots offers motor scooter, jeep, and ATV rentals in Cozumel. Explore the island with our fun and carefree rental services.">
+</head>
+<body>
+    <div id="temp-alert" class="alert">
+        <span id="temp-max">Loading...</span>
+        <button onclick="closeAlert()">❌</button>
+    </div>
+    <header>
+        <img src="images/logo.webp" alt="Scoots Logo" class="logo-img">
+        <h1>Scoots -  Rentals</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="scoots">
+        <section id="hero">
+            <h2>Welcome to Scoots</h2>
+    <picture>
+        <source srcset="images/scoots-large.webp" media="(min-width: 1200px)">
+        <source srcset="images/scoots-medium.webp" media="(min-width: 960px)">
+        <img src="images/scoots-large.webp" alt="Scoots - Motor Scooter Rentals">
+    </picture>
+    <p>Explore Cozumel with our fun and easy-to-rent scooters, jeeps, and ATVs. Discover the island's beauty beyond the touristy areas!</p>
+    <a href="reservations.html">
+        <button>Make a Reservation today!!!</button>
+    </a>
+        </section>
+        <div class="red-grid">
+            <section id="rentals">
+                <h2>Our Rentals</h2>
+                <p>We offer a variety of rental options to suit your adventure needs:</p>
+                <ul>
+                    <li>Motor Scooters</li>
+                    <li>Jeeps</li>
+                    <li>Side-by-Side ATVs</li>
+                </ul>
+            </section>
+            <section id="weather">
+                <h2>Weather Information</h2>
+                <div id="current-weather">
+                    <p>Temperature: <span id="current-temp">Loading...</span>°C</p>
+                    <p>Humidity: <span id="current-humidity">Loading...</span></p>
+                    <p>Condition: <span id="weather-main">Loading...</span> - <span id="weather-description">Loading...</span></p>
+                    <img id="weather-icon" src="images/transparent.png" alt="Weather Icon">
+                </div>
+                <div class="forecast">
+                    <span>Forecast for Tomorrow at 15:00: </span>
+                    <span><span id="forecast-temp">Loading...</span></span>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.webp" alt="Scoots Logo" class="logo-img">
+            <p class="author">Your Name</p>
+        </div>
+        <div class="footer-additional">
+            <p>Contact us at: <a href="mailto:info@scoots.com">info@scoots.com</a></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
