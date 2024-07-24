@@ -1,3 +1,13 @@
+async function loadGoogleMapsApi(apiKey) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMaps&libraries=maps,marker&v=beta`;
+        script.async = true;
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
+}
+
 async function getCoordinates(address, apiKey) {
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`;
     const response = await fetch(url);
@@ -36,4 +46,9 @@ async function initMaps() {
     }
 }
 
-window.onload = initMaps;
+window.onload = () => {
+    const apiKey = 'AIzaSyAqa_3SRF1HqXXb9zl0JbwL6lrZm8ELpEE'; // Your actual API key
+    loadGoogleMapsApi(apiKey).catch(error => {
+        console.error('Error loading Google Maps API:', error);
+    });
+};
