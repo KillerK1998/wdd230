@@ -1,6 +1,6 @@
 function toggleMenu() {
-    var menu = document.querySelector("nav"); // Make sure this ID matches your HTML
-    var hamburger = document.querySelector(".hamburger"); // Ensure this ID is also in your HTML
+    var menu = document.querySelector("nav"); // Select the nav element
+    var hamburger = document.querySelector(".hamburger"); // Select the hamburger element
 
     if (menu.style.display === "block") {
         menu.style.display = "none";

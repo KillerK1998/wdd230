@@ -15,7 +15,8 @@ function fetchWeatherData() {
             document.getElementById('current-humidity').innerText = `${data.main.humidity}%`;
             document.getElementById('weather-main').innerText = data.weather[0].main;
             document.getElementById('weather-description').innerText = data.weather[0].description;
-            document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+            // Commented out the line to set the weather icon source
+            // document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
             document.getElementById('temp-max').innerText = `Today's high: ${convertToFahrenheit(data.main.temp_max)}°F`;
         });
 
