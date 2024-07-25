@@ -11,20 +11,32 @@ function fetchWeatherData() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('current-temp').innerText = `${convertToFahrenheit(data.main.temp)}°F`;
-            document.getElementById('current-humidity').innerText = `${data.main.humidity}%`;
-            document.getElementById('weather-main').innerText = data.weather[0].main;
-            document.getElementById('weather-description').innerText = data.weather[0].description;
+            if (document.getElementById('current-temp')) {
+                document.getElementById('current-temp').innerText = `${convertToFahrenheit(data.main.temp)}°F`;
+            }
+            if (document.getElementById('current-humidity')) {
+                document.getElementById('current-humidity').innerText = `${data.main.humidity}%`;
+            }
+            if (document.getElementById('weather-main')) {
+                document.getElementById('weather-main').innerText = data.weather[0].main;
+            }
+            if (document.getElementById('weather-description')) {
+                document.getElementById('weather-description').innerText = data.weather[0].description;
+            }
             // Commented out the line to set the weather icon source
-            // document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-            document.getElementById('temp-max').innerText = `Today's high: ${convertToFahrenheit(data.main.temp_max)}°F`;
+            // if (document.getElementById('weather-icon')) {
+            //     document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+            // }
+            if (document.getElementById('temp-max')) {
+                document.getElementById('temp-max').innerText = `Today's high: ${convertToFahrenheit(data.main.temp_max)}°F`;
+            }
         });
 
     fetch(forecastUrl)
         .then(response => response.json())
         .then(data => {
             const forecast = data.list.find(item => item.dt_txt.includes('15:00:00'));
-            if (forecast) {
+            if (forecast && document.getElementById('forecast-temp')) {
                 document.getElementById('forecast-temp').innerText = `${convertToFahrenheit(forecast.main.temp)}°F`;
             }
         });
@@ -35,7 +47,9 @@ function convertToFahrenheit(celsius) {
 }
 
 function closeAlert() {
-    document.getElementById('temp-alert').style.display = 'none';
+    if (document.getElementById('temp-alert')) {
+        document.getElementById('temp-alert').style.display = 'none';
+    }
 }
 
 function makeReservation() {
