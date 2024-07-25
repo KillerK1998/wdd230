@@ -81,28 +81,6 @@ button:hover {
     background-color: aqua;
 }
 
-.alert {
-    background-color: #f44336;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.alert button {
-    background: none;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    padding-right: 40px
-}
-
 #rentals, #weather {
     padding: 20px;
     background-color: darkred;
