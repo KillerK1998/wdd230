@@ -70,15 +70,15 @@ nav ul li a {
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
+    background-color: darkred;
+    color: turquoise;
     border: none;
     cursor: pointer;
     margin-top: 20px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: aqua;
 }
 
 .alert {
@@ -134,8 +134,8 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: beige;
+    color: turquoise;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;

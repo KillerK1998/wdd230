@@ -43,5 +43,11 @@ body.dark-mode .hamburger {
         gap: 20px;
         padding: 20px;
     }
+    .contact-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
 }
 
