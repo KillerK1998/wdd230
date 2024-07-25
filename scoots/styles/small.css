@@ -68,17 +68,27 @@ nav ul li a {
 
 }
 
-button {
+.button-link {
+    display: inline-block;
     padding: 10px 20px;
-    background-color: darkred;
-    color: turquoise;
-    border: none;
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
 }
 
-button:hover {
-    background-color: aqua;
+.button-link:hover {
+    background-color: darkred;
+}
+
+.button-link:active {
+    background-color: darkred;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 #rentals, #weather {
