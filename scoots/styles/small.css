@@ -35,7 +35,7 @@ body {
 
 header {
     background-color: beige;
-    color: black;
+    color: darkred;
     padding: 10px 0;
 }
 
@@ -113,7 +113,7 @@ button:hover {
 
 footer {
     background-color: beige;
-    color: turquoise;
+    color: darkred;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
@@ -228,13 +228,6 @@ th {
     background-color: #555;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
 .footer-logo,
 .footer-additional {
     margin-bottom: 1rem;
@@ -282,13 +275,6 @@ footer {
 
 .form-group button:hover {
     background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
 }
 
 .footer-logo,
@@ -354,11 +340,6 @@ header, nav, main, footer {
     text-align: center;
 }
 
-header {
-    background-color: teal;
-    color: #fff;
-    position: relative;
-}
 header img {
     height: 150px;
     margin-right: 20px;
@@ -420,14 +401,7 @@ h2, h3 {
     max-width: 100%; 
 }
 
-footer {
-    background-color: #065A60;
-    color: white;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+
 
 
 .hamburger {
@@ -506,46 +480,10 @@ iframe {
     height: 600px;
     border: none;
 }
-.chamber{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    padding: 20px;
-}
 
-.sidebar {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-right: 2px solid #ccc;
-}
-
-.sidebar h2 {
-    margin-top: 0;
-}
-
-.sidebar p, .sidebar ul {
-    margin: 10px 0;
-}
 
 .main-content img:hover {
     transform: scale(1.05);
     border: 5px solid teal;
 }
 
-.photo {
-    margin-bottom: 20px;
-}
-
-.photo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.photo caption {
-    text-align: center;
-    display: block;
-    margin-top: 10px;
-    font-style: italic;
-    color: #666;
-}
