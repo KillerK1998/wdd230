@@ -23,10 +23,7 @@ function fetchWeatherData() {
             if (document.getElementById('weather-description')) {
                 document.getElementById('weather-description').innerText = data.weather[0].description;
             }
-            // Commented out the line to set the weather icon source
-            // if (document.getElementById('weather-icon')) {
-            //     document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-            // }
+
             if (document.getElementById('temp-max')) {
                 document.getElementById('temp-max').innerText = `Today's high: ${convertToFahrenheit(data.main.temp_max)}°F`;
             }
