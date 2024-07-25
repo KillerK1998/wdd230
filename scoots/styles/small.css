@@ -91,6 +91,11 @@ button:hover {
     color: turquoise;
     ;
 }
+#rentals ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 #rentals h2, #weather h2 {
     text-align: center;
